@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!--Link to Bootstrap CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--custom CSS file for the body, hero and weather info-->
+    <link rel="stylesheet" href="weatherapp.css">
+   
+</head>
+
+<body>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="mb-3">Weather Information</h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Zip code entry and get weather button -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="weatherForm" class="text-center">
+                    <div class="form-group">
+                        <label for="zipCode">Enter Zip Code:</label>
+                        <input type="text" class="form-control" id="zipCode" placeholder="Enter zip code" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Get Weather</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Weather details section -->
+        <div id="weatherInfo" class="mt-5 d-none weather-info">
+            <h2>Weather Details</h2>
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>Current Temperature:</strong> <span id="temperature"></span> °F</p>
+            <p><strong>Feels Like:</strong> <span id="feelsLike"></span> °F</p>
+            <p><strong>Current Conditions:</strong> <span id="description"></span></p>
+            <p><strong>Temperature Range:</strong> <span id="tempRange"></span> °F</p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </div>
+
+    </div>
+
+    <!-- Link to Bootstrap JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Custom JavaScript file-->
+    <script src="weatherapp.js"></script>
+
+</body>
+</html>
