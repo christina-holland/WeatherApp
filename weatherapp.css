@@ -1,9 +1,11 @@
+/*Added light blue background, font style, and text color to body*/
 body {
-    background-color: #f0f6fc; /* Light blue background */
-    font-family: 'Arial', sans-serif; /* Font style */
-    color: #444; /* Text color */
+    background-color: #f0f6fc;
+    font-family: 'Arial', sans-serif;
+    color: #444;
 }
 
+/*Styling hero section with a background image, centering, text color and size for better visibility*/
 .hero {
     background-image: url('heroimage.jpg');
     background-size: cover;
@@ -21,6 +23,7 @@ body {
     margin-bottom: 0;
 }
 
+/*Adding white background, light gray border, and rounded corners.*/
 .weather-info {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -30,12 +33,14 @@ body {
     margin-top: 30px;
 }
 
+/*Changed font size and used center alignment for weather info heading*/
 .weather-info h2 {
     font-size: 2.5rem; 
     margin-bottom: 20px; 
     text-align: center; 
 }
 
+/*Styled form group and button with a gray color palette for consistency*/
 .form-group {
     margin-bottom: 20px; 
 }
